@@ -10,6 +10,7 @@ class _HueState extends State<Hue> {
   TextEditingController _controllerSenha = TextEditingController();
   var text = '';
   var senha = '';
+  var flag = true;
 
   @override
   Widget build(BuildContext context) {
@@ -68,6 +69,17 @@ class _HueState extends State<Hue> {
               Padding(
                 padding: EdgeInsets.all(32),
                 child: Text(senha),
+              ),
+              Padding(
+                padding: EdgeInsets.all(32),
+                child: Checkbox(
+                  value: flag,
+                  onChanged: (bool flagParam) {
+                    setState(() {
+                      flag = flagParam;
+                    });
+                  },
+                ),
               )
             ],    
           ),
