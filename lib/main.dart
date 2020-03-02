@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:haha_app/TelaPrincipal.dart';
+import 'package:haha_app/TelaSecundaria.dart';
 import 'package:haha_app/hue.dart';
 import 'package:haha_app/checkBox.dart';
 import 'package:haha_app/radioButtons.dart';
@@ -11,6 +12,10 @@ main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/secundaria': (context) => TelaSecundaria() 
+      },
       home: TelaPrincipal(),
     )
   );  

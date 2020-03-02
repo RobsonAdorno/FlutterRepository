@@ -24,6 +24,13 @@ class _TelaSecundariaState extends State<TelaSecundaria> {
               Text('Segunda Tela. Pegando o seguinte valor: ${widget.zuera}', style: TextStyle(
                 fontSize: 25,
                 ),
+              ),
+
+              RaisedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/');
+                },
+                child: Text('Primeira tela'),
               )
             ],
           ),

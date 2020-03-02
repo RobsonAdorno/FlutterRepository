@@ -20,10 +20,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
           children: <Widget>[
             RaisedButton(
               onPressed: (){
-                Navigator.push(context,
-                  MaterialPageRoute(
-                    builder: (context) => TelaSecundaria(zuera: "Robson")    
-                  ));
+                Navigator.pushNamed(context,'/secundaria');
               },
               child: Text('Ir para a segunda tela!'),
             )
