@@ -22,7 +22,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
               onPressed: (){
                 Navigator.push(context,
                   MaterialPageRoute(
-                    builder: (context) => TelaSecundaria()    
+                    builder: (context) => TelaSecundaria(zuera: "Robson")    
                   ));
               },
               child: Text('Ir para a segunda tela!'),
